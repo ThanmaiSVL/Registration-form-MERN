@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Center content vertically */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5; /* Light background color */
+    }
+
+    /* Container for centering */
+    .container {
+      width: 540px; /* Increased width for larger box */
+      margin: 0 auto; /* Center container horizontally */
+      padding: 30px; /* Add padding for spacing */
+      text-align: center;
+    }
+
+    /* Form styling with aesthetic border */
+    form {
+      display: inline-block;
+      padding: 20px;
+      border: 5px solid #ffc0cb; /* Aesthetic border color for form */
+      border-radius: 10px;
+      display: flex; /* Make form a flex container for centering */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements horizontally */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      display: block;
+      width: 100%; /* Full width for each input */
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #ffc0cb; /* Button color */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    h2 {
+      color: #d0316f; /* Light pink color */
+      font-family: 'Amatic SC', cursive; /* Subtle cursive font for the title */
+      font-size: 2em; /* Increase font size for emphasis */
+      margin-bottom: 20px; /* Add some space below the title */
+      text-shadow: 1px 1px 2px rgba(255, 192, 203, 0.5); /* Subtle pink shadow for a softer look */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form action="/register" method="POST"> 
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Register">
+    </form>
+  </div>
+</body>
+</html>
